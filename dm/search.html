@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/damai-header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/damai-footer.css"/>
+		<link rel="stylesheet" href="css/search.css">
+		
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div id="search-box" class="clear">
+			<p class="search-box-top">
+				共<span>1</span>个商品
+			</p>
+			<div class="left-box fl">
+				<div class="search-factor">
+					 <div class="factor-item clear" id="city">
+						<span class="factor-title fl">城市：</span>
+						<div class="factor-box clear fl">
+							<div class="factor-selected fl">当前选中城市<span class="selected-city">全国</span></div>
+							<div class="factor-content fl clear">
+								<span class="fl all" id="selected">全部</span>
+								<div class="fl factor-city">
+									<span>上海</span>
+									<span >北京</span>
+									<span>天津</span>
+									<span>深圳</span>
+									<span>杭州</span>
+									<span>西安</span>
+									<span>成都</span>
+									<span>广州</span>
+									<span>重庆</span>
+									<span>苏州</span>
+									<span>武汉</span>
+									<span>南京</span>
+									<span>无锡</span>
+									<span>宁波</span>
+									<span>南宁</span>
+									<span>沈阳</span>
+									<span>大连</span>
+									<span>昆明</span>
+									<span>长沙</span>
+									<span>珠海</span> 
+								</div>
+								<div class="more fr">
+									<span>更多</span>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="factor-item clear" id="tag">
+						<span class="factor-title fl">分类：</span>
+						<div class="factor-content fl clear">
+							<span class="fl all"  id="selected">全部</span>
+							<div class="fl factor-city">
+								<span>话剧歌剧</span>
+								<span>音乐会</span>
+								<span>展览休闲</span>
+								<span>曲苑杂坛</span>
+								<span>演唱会</span>
+								<span>舞蹈芭蕾</span>
+								<span>体育</span>
+								<span>其他</span>
+								<span>儿童亲子</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- <div class="factor-item">
+						<span class="factor-title fl">时间：</span>
+						<div class="factor-content fl clear">
+							<span class="fl all" id="selected">
+								全部
+							</span>
+							<div class="fl factor-city">
+								<span>上海</span>
+								<span>北京</span>
+								<span>天津</span>
+								<span>深圳</span>
+								<span>杭州</span>
+							</div>
+							
+						</div>
+					</div> -->
+					
+				</div>
+				
+
+				<div class="box2">
+					<div class="search-sort clear">
+						<span class="search-sort-item">相关度排序</span>
+						<span class="search-sort-item">推荐排序</span>
+						<span class="search-sort-item">最近开场</span>
+						<span class="search-sort-item">最新上架</span>
+						<div></div>
+					</div>
+					
+					<div class="search-list">
+						
+					</div>
+					<div class="pagination"></div>		
+					
+				</div>
+				
+				
+			</div>
+		
+			<div class="right-box fr">
+				<p>您可能还喜欢</p>
+				<ul class="tuijian clear">
+					
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div id="footer"></div>
+		
+		
+		<script type="text/javascript" src="./jquery/jquery.js"></script>
+		<script type="text/javascript" src="./js/pagination.js"></script>
+		<script type="text/javascript" src="./js/ajax.js"></script>
+		<script type="text/javascript" src="./js/search.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#header").load("./damai-header.html");
+				$("#footer").load("./damai-footer.html");
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<div class="header clear">
+	<a href="./damai.html" class="fl"><img src="img/logo1.png" alt=""></a>
+	<div class="map-count fl" id="aa">
+		<img src="img/header1.png" alt="">
+		<span>全国</span>
+		<img src="img/header3.png" alt="">
+		<div class="city-header-wrap on">
+			<div class="now-city">
+				<span class="title-city">当前城市：</span>
+				<span class="name-city select-city">全国</span>
+			</div>
+			<div class="hot-city clear">
+				<span class="title-city">热门城市：</span>
+				<p class="list-other">
+					<span>全国</span>
+					<span>北京</span>
+					<span>上海</span>
+					<span>深圳</span>
+					<span>广州</span>
+					<span>杭州</span>
+					<span>天津</span>
+					<span>重庆</span>
+					<span>成都</span>
+					<span>中国香港</span>
+				</p>
+			</div>
+			<div class="other-city clear">
+				<span class="title-city">其他城市：</span>
+				<p class="list-other">
+					<span>北京</span>
+					<span>上海</span>
+					<span>天津</span>
+					<span>杭州</span>
+					<span>深圳</span>
+					<span>广州</span>
+					<span>成都</span>
+					<span>西安</span>
+					<span>苏州</span>
+					<span>武汉</span>
+					<span>重庆</span>
+					<span>长沙</span>
+					<span>南京</span>
+					<span>无锡</span>
+					<span>宁波</span>
+					<span>大连</span>
+					<span>沈阳</span>
+					<span>昆明</span>
+					<span>青岛</span>
+					<span>郑州</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="a-header fl">
+		<a href="./damai.html">首页</a>
+		<a href="./search.html">分类</a>
+	</div>
+	<div class="right-header fr">
+		<div class="login">
+			<img src="img/header6.png" alt=""><a href="./login.html">登录</a>
+			<div class="sel">
+				<p>个人信息</p>
+				<p>账号设置</p>
+				<p>订单管理</p>
+			</div>
+		</div>
+		<div class="download"><img src="img/header5.png" alt=""><a href="">下载</a></div>
+		<div class="language"><img src="img/header4.png" ><a href="">English</a></div>
+	</div>
+	<div class="right-middle fr">
+		<img src="img/header2.png" alt="">
+		<input type="text" placeholder="搜索明星、演出、体育赛事"><input type="button" value="搜索">
+	</div>
+</div>
+<script type="text/javascript" src="./js/ajax.js"></script>
+<script type="text/javascript" src="./js/cookie.js"></script>
+<script type="text/javascript" src="./js/damai.js"></script>
+<script type="text/javascript" src="./js/dm-header-inp.js"></script>
+
+<script type="text/javascript">
+	//获取账号cookie
+	var name1=getCookie("user");
+	var login = document.querySelector(".login")
+	if(name1){
+	    login.style.display="none"
+	}else{
+	   login.style.display="block"
+	}
+	
+</script>

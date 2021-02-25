@@ -1,0 +1,162 @@
+.map-count,.language{
+	display: none!important;
+}
+.right-header .login{
+	display: none;
+}
+#cart{
+	width: 1200px;
+	margin: auto;
+}
+.msg{
+	border-bottom: 1px solid #e9e9e9;
+}
+.msg li{
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	box-sizing: border-box;
+}
+.c1{
+	width: 190px;
+	padding-left: 8px;
+}
+.c2{
+	width: 440px;
+}
+.c3,.c4{
+	text-align: center;
+	width: 150px;
+}
+.c5{
+	box-sizing: border-box;
+	padding-left: 36px;
+	text-align: center;
+	width: 160px;
+}
+.c6{
+	text-align: center;
+	width: 110px;
+}
+table{
+	width: 1200px;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+.cart-box>p{
+	font-size: 36px;
+	font-weight: bolder;
+	padding-bottom: 20px;
+}
+.cart-box table{
+	margin: auto;
+}
+tr{
+	background: #fefefe;
+	border-bottom: 1px solid #dcdcdc;
+}
+td{
+	height: 138px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.td1{
+	width: 52px;
+	vertical-align: middle;
+	padding-top: 0;
+	padding-left: 8px;
+}
+.td2{
+	padding-top: 15px;
+	width: 100px;
+}
+.td3{
+	width: 336px;
+}
+.td4,.td5,.td6{
+	text-align: center;
+	width: 132px;
+}
+.td3,.td4,.td5,.td6,.td7{
+	padding-top: 20px;
+}
+.td5 input{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+}
+.td6{
+	color: red;
+}
+.td7{
+	
+	width: 72px;
+}
+.td7 input{
+	text-align: center;
+	width: 72px;
+	background: #fafafa;
+	cursor: pointer;
+}
+.td2 img{
+	width: 84px;
+	height: 108px;
+}
+tfoot tr td{
+	height: 52px;
+	line-height: 52px;
+}
+.tf1{
+	width: 160px;
+	text-align: center;
+}
+.tf2{
+	width: 160px;
+	text-align: right;
+	padding-right: 140px;
+}
+.buy{
+	height: 60px;
+	background: #f4f4f4;
+	margin: 20px 0;
+	line-height: 60px;
+}
+.buy li{
+	float: left;
+}
+.buy1{
+	width: 70px;
+	padding-left:5px;
+}
+.buy2{
+	width: 120px;
+}
+.buy2 input{
+	width: 120px;
+	background: #f4f4f4;
+	cursor: pointer;
+}
+.buy3{
+	width: 440px;
+}
+.buy4{
+	width: 190px;
+}
+.buy5{
+	
+	text-align: center;
+}
+.buy5 input{
+	display:block;
+	text-align: center;
+	margin-top: 12px;
+	width: 120px;
+	height: 36px;
+	background: #FF1268;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 36px;
+	color: #fff;
+	cursor: pointer;
+}

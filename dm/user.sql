@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 26/02/2021 00:12:56
+ Date: 27/02/2021 08:55:26
 */
 
 SET NAMES utf8mb4;
@@ -28,7 +28,7 @@ CREATE TABLE `user`  (
   `phone` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '联系方式',
   `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
@@ -37,5 +37,7 @@ INSERT INTO `user` VALUES (1, '张三', '123456', '1234848', '3939@qq.com');
 INSERT INTO `user` VALUES (2, '李四', 'asdfgh', '', '27227@gmail.com');
 INSERT INTO `user` VALUES (3, 'aa', '111', '132436', '');
 INSERT INTO `user` VALUES (4, 'admin', '888888', '123456', '8888@gmail.com');
+INSERT INTO `user` VALUES (6, 'cccbbb', '12345678', '174646', '777777@qq.com');
+INSERT INTO `user` VALUES (7, 'cyy', '123456', '18874732173', '1551585023@qq.com');
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -1,8 +1,8 @@
-$('.map-count').hover(function(){
-	$(this).find(".city-header-wrap").addClass("on")
-},function(){
-	$(this).find(".city-header-wrap").removeClass("on")
-})
+// $('.map-count').hover(function(){
+// 	$(this).find(".city-header-wrap").addClass("on")
+// },function(){
+// 	$(this).find(".city-header-wrap").removeClass("on")
+// })
 
 $(".icon-damai").hover(function(){
 	$(".damai-code").addClass("on")

@@ -16,7 +16,7 @@ if(search){
             data:'id='+id,
             datatype:'json'
         })
-		console.log(dts);
+		//console.log(dts);
         //创建拼接所有内容的字符串
         var str=`
         <div class="content">
@@ -146,20 +146,20 @@ if(search){
         <div class="con-right">
         	<div class="service">
         		<div class="service-note">
-        			<p class="service-name"><i></i>${dts.ervice_note1}</p>
-        			<div class="service-content">222</div>
+        			<p class="service-name">${dts.ervice_note1}</p>
+        			<div class="service-content"></div>
         		</div>
 				<div class="service-note">
-					<p class="service-name"><i></i>${dts.ervice_note2}</p>
-					<div class="service-content">222</div>
+					<p class="service-name">${dts.ervice_note2}</p>
+					<div class="service-content"></div>
 				</div>
 				<div class="service-note">
-					<p class="service-name"><i></i>${dts.ervice_note3}</p>
-					<div class="service-content">222</div>
+					<p class="service-name">${dts.ervice_note3}</p>
+					<div class="service-content"></div>
 				</div>
 				<div class="service-note">
-					<p class="service-name"><i></i>${dts.ervice_note4}</p>
-					<div class="service-content">222</div>
+					<p class="service-name">${dts.ervice_note4}</p>
+					<div class="service-content"></div>
 				</div>
         		<div class="service-note"></div>
         	</div>
@@ -179,6 +179,7 @@ if(search){
 	$(".words").find("p").addClass("item-text");
 	
 	title()
+	title2()
 	tuijian()
     })()
 	
@@ -246,14 +247,14 @@ function tuijian(){
 		var c1=dts.city;
 		var t1=dts.tag;
 		var tui = document.querySelector(".tuijian");
-		console.log(c1)
-		console.log(t1)
+		//console.log(c1)
+		//console.log(t1)
 		dt=await promiseAjax({
 			url:'./php/tuijian.php',
 			data:'tag='+t1+'&city='+c1,
 			datatype:'json'
 		})
-		console.log(dt)
+		//console.log(dt)
 		
 		var ar1 = dt.slice(0,3)
 		//创建拼接所有内容的字符串
@@ -277,4 +278,34 @@ function tuijian(){
 		tui.innerHTML=str1;
 	})()
 	
+}
+
+function title2(){
+	var ser_txt = document.querySelectorAll(".service-content")
+	var ser_title = document.querySelectorAll(".service-name")
+	for(let i=0;i<ser_title.length;i++){
+		
+		if(ser_title[i].innerHTML=="不支持退"){
+			ser_txt[i].innerHTML="票品为有价证券，非普通商品，其背后承载的文化服务具有时效性，稀缺性等特征，不支持退换。"
+		} else if(ser_title[i].innerHTML=="可选座"){
+			ser_txt[i].innerHTML="<p>本项目支持自主选座</p><p>选择演出时间，并点击“选座购票”进入选座页面</p><p>选座后，在倒计时内支付成功，选座生效（先付后选的项目需要先付款，到开放选座的日期我们会短信通知，请注意查收）</p>"
+		}else if(ser_title[i].innerHTML=="快递票"){
+			ser_txt[i].innerHTML="快递票：纸质票会在开票后快递到您留下的收货地址，需您承担邮寄费用。注：离开演时间仅3天时，不再寄送快递票，支持在指定取票地点取票（具体以下单后票夹信息为准）"
+		}else if(ser_title[i].innerHTML=="自助取票"){
+			ser_txt[i].innerHTML="自助取票：需要您在指定的取票地点取票，下单后可通过票夹中的二维码或身份证换取纸质票（具体以下单后票夹信息为准）"
+		}else if(ser_title[i].innerHTML=="电子票"){
+			ser_txt[i].innerHTML="电子票：通过票夹中的二维码或身份证，可以直接验票入场（具体以下单后票夹信息为准）"
+		}else if(ser_title[i].innerHTML=="电子发票"){
+			ser_txt[i].innerHTML="电子票：通过票夹中的二维码或身份证，可以直接验票入场（具体以下单后票夹信息为准）"
+		}else if(ser_title[i].innerHTML=="纸质发票"){
+			ser_txt[i].innerHTML="该项目支持开具纸质发票，请您在演出开始前通过订单页补开，发票将在演出结束后1个月左右，统一由主办方提供"
+		}else if(ser_title[i].innerHTML=="实名制观演"){
+			ser_txt[i].innerHTML="本项目需实名制购票及入场，观演请本人携带购票时填写证件验证入场"
+			
+		}
+		if(ser_txt[i].innerHTML==""){
+			// console.log(texts[i]);
+			ser_title[i].style.display="none";
+		}
+	}
 }

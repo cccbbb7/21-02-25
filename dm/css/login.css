@@ -66,7 +66,7 @@ form .fm-field{
 	width: 100%;
 	outline: none;
 	font-size: 14px;
-	padding-left: 50px;
+	padding-left: 10px; 
 }
 form .fm-button{
 	color: #fff;
@@ -80,4 +80,9 @@ form .fm-button{
 	background-image: linear-gradient(90deg,#ff4aae,#ff1268);
 	border-color: #ff1268;
 	cursor: pointer;
+}
+form a{
+	margin-top: 20px;
+	float: right;
+	color: #00B3FF;
 }

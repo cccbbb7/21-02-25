@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/message.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/damai-header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/damai-footer.css"/>
+		<script type="text/javascript" src="./jquery/jquery.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="box"></div>
+		<div id="footer"></div>
+		
+		<script type="text/javascript" src="./js/ajax.js"></script>
+		<script type="text/javascript" src="./js/message.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#header").load("./damai-header.html");
+				$("#footer").load("./damai-footer.html");
+			});
+		</script>
+	</body>
+</html>

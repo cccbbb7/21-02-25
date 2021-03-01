@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/damai-header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/damai-footer.css"/>
+		
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div class="box">
+			<div class="center clear">
+				<img src="img/lo-bg.png" alt="">
+				<div class="content fr">
+					<div class="login-tabs">
+						<span class="login-tabs-tab">密码登录</span>
+						<!-- <span class="login-tabs-tab">短信登录</span>
+						<span class="login-tabs-tab">扫码登录</span> -->
+						
+					</div>
+					<div class="login-content">
+						<form action="" class="clear">
+							<div>
+								<div></div>
+								<input class="fm-field" type="text" placeholder="请输入手机号或邮箱" >
+							</div>
+							<div>
+							<input class="fm-field" type="password" placeholder="请输入登录密码">
+							</div>
+							<div>
+							<button class="fm-button" type="submit">登录</button>
+							<a href="./register.html">立即注册</a>
+							</div>
+						</form>
+					</div>
+					<div> </div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div id="footer"></div>
+		
+		
+		<script type="text/javascript" src="./jquery/jquery.js"></script>
+		<script type="text/javascript" src="./js/ajax.js"></script>	
+		<script type="text/javascript" src="./js/cookie.js"></script>
+		<script type="text/javascript" src="./js/login.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#header").load("./damai-header.html");
+				$("#footer").load("./damai-footer.html");
+			});
+		</script>
+		
+	</body>
+</html>

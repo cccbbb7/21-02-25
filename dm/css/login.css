@@ -1,0 +1,88 @@
+.map-count,.a-header,.right-header,.right-middle{
+	display: none;
+}
+a{
+	color: #000000;
+	list-style: none;
+}
+#header,.box,#footer{
+	min-width: 1200px;
+}
+.box{
+	background: linear-gradient(to right, #17073d, #17073d, #17073d);
+}
+.center{
+	width: 1200px;
+	height: 600px;
+	margin: auto;
+}
+.center>img{
+	width: 720px;
+	height: 400px;
+	float: left;
+	margin-top: 90px;
+}
+.content{
+	margin: 90px auto 10px;
+	padding: 0;
+	overflow: hidden;
+	float: right;
+	width: 350px;
+	min-height: 310px;
+	background: #fff;
+	text-align: center;
+	
+}
+.login-tabs{
+	margin: 0 auto 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+}
+.login-tabs-tab{
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: center;
+	line-height: 38px;
+	height: 38px;
+	background-color: #e7e7e7;
+	border-top: 2px solid #ccc;
+	cursor: pointer;
+	color: #222;
+	font-size: 16px;
+}
+.login-content{
+	width: 300px;
+	margin: auto;
+	padding-top: 2px;
+}
+form .fm-field{
+	margin-bottom: 20px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	height: 42px;
+	width: 100%;
+	outline: none;
+	font-size: 14px;
+	padding-left: 10px; 
+}
+form .fm-button{
+	color: #fff;
+	width: 100%;
+	border: 1px solid #ff9000;
+	border-radius: 3px;
+	font-size: 20px;
+	height: 42px;
+	line-height: 42px;
+	outline: none;
+	background-image: linear-gradient(90deg,#ff4aae,#ff1268);
+	border-color: #ff1268;
+	cursor: pointer;
+}
+form a{
+	margin-top: 20px;
+	float: right;
+	color: #00B3FF;
+}

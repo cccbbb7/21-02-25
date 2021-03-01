@@ -1,0 +1,264 @@
+.map-count,.language{
+	display: none!important;
+}
+.box{
+	display: flex;
+	border: 1px solid #ebebeb;
+	border-top: 0;
+	width: 1200px;
+	margin: 0 auto;
+}
+.box .content{
+	flex: 1;
+}
+
+.hd{
+	position: relative;
+	padding: 40px 0 30px 25px;
+	min-height: 360px;
+}
+.hd .left-img{
+	width: 270px;
+}
+.hd img{
+	width: 270px;
+	height: 360px;
+}
+.hd .order{
+	width: 525px;
+	font-size: 22px;
+	padding-right: 25px;
+}
+.order .title{
+	font-size: 30px;
+}
+.tim-addr{
+	position: relative;
+	font-size: 20px;
+	color: #4a4a4a;
+	margin-top: 21px;
+	zoom: 1;
+}
+.tim-addr .time{
+	padding-bottom: 10px;
+}
+.perform-order-box{
+	position: relative;
+	height: 230px;
+}
+.perform-order-box div:first-child{
+	font-size: 30px;
+	padding: 80px 0 0 20px;
+	color: #FF1268;
+}
+.perform-order-box .perform-btn{
+	position: absolute;
+	bottom: 14px;
+	left: 20px;
+}
+.perform-btn a:nth-child(1){
+	font-size: 18px;
+	position: absolute;
+	top: -274px;
+	right: -330px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: deeppink;
+	color: #fff;
+	border-radius: 15px;
+}
+
+.perform-order-box a:nth-child(2){
+	display:inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	width: 140px;
+	height: 60px;
+	line-height: 60px;
+	background: deeppink;
+	color: #fff;
+	border-radius: 15px;
+	margin-right: 30px;
+}
+.notice-nav-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: #fff;
+	-webkit-box-shadow: 0 2px 16px 0 hsla(0,0%,86.3%,.5);
+	-moz-box-shadow: 0 2px 16px 0 hsla(0,0%,86.3%,.5);
+	box-shadow: 0 2px 16px 0 hsla(0,0%,86.3%,.5);
+}
+.notice-nav-fixed-wrap{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 1200px;
+	height: 90px;
+	padding: 0 30px;
+	line-height: 90px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.notice-nav{
+	height: 54px;
+	line-height: 54px;
+	padding-left: 30px;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+.notice-nav-item{
+	font-size: 16px;
+	color: #9c9ca5;
+	margin-right: 60px;
+	cursor: pointer;
+}
+.notice-content{
+	padding: 60px 30px 0;
+}
+.notice-content .list{
+	padding-bottom: 50px;
+}
+#detail div:nth-child(1){
+	margin-bottom: 25px;
+}
+.list .title{
+	padding-bottom: 14px;
+	margin-bottom: 23px;
+	font-size: 20px;
+	color: #000;
+	border-bottom: 1px solid #e2e2e2;
+}
+.list .words{
+	font-size: 16px;
+	color: #4a4a4a;
+	line-height: 30px;
+}
+.notice-content .intro>div{
+	word-break: break-word;
+}
+.intro>div p{
+	font-size: 16px;
+	color: #4a4a4a;
+	line-height: 30px;
+}
+.intro img{
+	padding: 5px 0;
+	max-width: 100%;
+	height: auto;
+}
+.item-title{
+	color: #999;
+	font-size: 13px;
+	line-height: 30px;
+}
+.item-text{
+	line-height: 26px;
+	padding-bottom: 15px;
+	font-size: 16px;
+	color: #4a4a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box .con-right{
+	box-sizing: border-box;
+	width: 320px;
+	border-left: 1px solid #ebebeb;
+	padding: 40px 18px 0;
+}
+.service{
+	padding: 24px 15px;
+	background: #fafafa;
+	border: 1px solid #ebebeb;
+}
+.service-note{
+	margin-bottom: 18px;
+}
+.service-content{
+	margin-top: 6px;
+	font-size: 12px;
+	color: #999;
+}
+.right-con-suggest{
+	margin-top: 60px;
+}
+.right-con-suggest>p{
+	margin-bottom: 24px;
+	font-size: 20px;
+	color: #000;
+	line-height: 28px;
+}
+.right-con-suggest ul{
+	width: 280px;
+	box-sizing: border-box;
+}
+.right-con-suggest li{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.right-con-suggest img{
+	width: 120px;
+	height: 160px;
+}
+.right-con-suggest .content{
+	font-size: 12px;
+	width: 150px;
+	padding-left: 10px;
+	position: relative;
+	height: 160px;
+}
+.right-con-suggest .content a{
+	display: block;
+	height: 48px;
+	margin-bottom: 15px;
+}
+.right-con-suggest .content .price{
+	position: absolute;
+	padding-top: 14px;
+	bottom: 0;
+}
+.right-con-suggest .content .venue,.right-con-suggest .content .showtime,.right-con-suggest .content .price{
+	color: #999;
+}
+.right-con-suggest .content .price span:nth-child(1){
+	color: #ed0a75;
+	font-size: 14px;
+	padding-right: 5px;
+}
+
+.right-con-suggest .content .title{
+	line-height: 20px;
+	font-size: 14px;
+	color: #4A4A4A;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2
+}
+.right-con-suggest .content .venue{
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 12px;
+	margin-top: 14px;
+	color: #9B9B9B;
+	overflow: hidden;
+	word-break: break-all;
+}
